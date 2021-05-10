@@ -1,0 +1,5 @@
+Servir servidor 
+php artisan serve
+php artisan make:model Product --migration
+php artisan migrate:fresh --seed
+php artisan make:controller ProductController --api da todos los metodos crud
