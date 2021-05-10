@@ -5,9 +5,24 @@ POST http://localhost:8000/api/products HTTP/1.1
 Content-type: application/json
 
 {
-    "name": "My new title copnt",
+    "name": "search",
     "slug": "My new content cont",
     "description": "soy description",
     "price": 2.99
 }
 ###
+GET http://localhost:8000/api/products/1 HTTP/1.1
+###                 
+PUT http://localhost:8000/api/products/1 HTTP/1.1
+Content-type: application/json
+
+{
+    "name": "My new updt",
+    "slug": "My new content cont upd",
+    "description": "soy description upd",
+    "price": 2.99
+}
+###
+DELETE http://localhost:8000/api/products/2 HTTP/1.1
+###   
+GET http://localhost:8000/api/products/search/pro HTTP/1.1
